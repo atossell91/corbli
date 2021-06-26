@@ -1,0 +1,23 @@
+.title {
+	color: Red;
+	font-family: 'courier new';
+	font-weight: bold;
+	font-size: 36pt;
+	background-color: LightGrey;
+	padding-left: 50px;
+}
+.links {
+	background-color: DarkGrey;
+	font-family: Arial;
+}
+a {
+	vertical-align: middle;
+	padding-left: 5px;
+	padding-right: 5px;
+	border-style: Solid;
+	border-color: Black;	
+}
+p1 {
+	color: Black;
+	font-family: Arial;
+}
