@@ -2,6 +2,12 @@
 <html>
 	<head>
 		<link href="../css/styles.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="../scripts/calc_hours.js"></script>
+		<script type="text/javascript">
+			function bar() {
+				window.alert("Bar");
+			}
+		</script>
 	</head>
 	<body>
 		<div class="title">
@@ -12,14 +18,14 @@
 			<a href="about.html">About</a>
 			<a href="hours_calc.html">Calculate Hours</a>
 		</div>
-		
+
 		Hours Calculator</p1><br>
 		<form>
 			<label for="start" id="start" name="start">Start time: </label>
 			<input type="time"></input><br>
 			<label for="end">End time: </label>
 			<input type="time" id="end" name="end"></input><br>
-			<input type="submit" id="submit" name="submit"></input>
+			<input type="submit" onclick="foo()" id="submit" name="submit"></input>
 		</form>
 	</body>
 </html>
