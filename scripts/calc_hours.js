@@ -1,4 +1,3 @@
-
 const msMin = 60000
 const msHour = 3600000
 const msDay = 86400000
@@ -37,8 +36,6 @@ function numFormat (num, digits) {
   return strOut
 }
 function calculateTimeDiff (msStart, msEnd) {
-  var intervalMins = 15
-
   //  Ensure end is always after start
   if (msEnd < msStart) {
     msEnd += msDay
@@ -64,7 +61,7 @@ function lockToInterval (num, interval) {
 
   return numIntervals * interval
 }
-function calculateHours () {
+function calculateHours () { // eslint-disable-line no-unused-vars
   //  Get values from html form - func
   var startDate = document.getElementById('start').value
   var endDate = document.getElementById('end').value
