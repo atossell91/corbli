@@ -31,3 +31,7 @@ p1 {
 	padding-left: 50px;
 	padding-right: 100px;
 }
+.stroke {
+	stroke: green;
+	stroke-width: 2;
+}

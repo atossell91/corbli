@@ -1,0 +1,9 @@
+[class*="block-"] {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+}
+.block_border{
+  stroke: black;
+  stroke-width: 2;
+}
