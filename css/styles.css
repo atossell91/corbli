@@ -24,3 +24,14 @@ p1 {
 	color: Black;
 	font-family: Arial;
 }
+.timeInput {
+	font-size: 2vw;
+}
+.blog_text {
+	padding-left: 50px;
+	padding-right: 100px;
+}
+.stroke {
+	stroke: green;
+	stroke-width: 2;
+}

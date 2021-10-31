@@ -1,4 +1,3 @@
-
 const msMin = 60000
 const msHour = 3600000
 const msDay = 86400000
@@ -17,17 +16,17 @@ function numFormat (num, digits) {
   if (digits < 2) {
     return num + ''
   }
-  var power = digits - 1
+  const power = digits - 1
   console.log('Power: ' + power)
-  var base = Math.pow(10, power)
+  const base = Math.pow(10, power)
   console.log('Base: ' + base)
-  var floatZeroes = 1 / (Math.log(num) / Math.log(base))
+  const floatZeroes = 1 / (Math.log(num) / Math.log(base))
   console.log('addZeroes (decimal): ' + floatZeroes)
-  var addZeroes = Math.floor(floatZeroes)
+  const addZeroes = Math.floor(floatZeroes)
   console.log('Number of zeroes to add: ' + addZeroes)
 
-  var strOut = ''
-  for (var n = 0; n < addZeroes; ++n) {
+  let strOut = ''
+  for (let n = 0; n < addZeroes; ++n) {
     strOut = strOut.concat('0')
     console.log('Adding a zero. Str: ' + strOut)
   }
@@ -37,53 +36,51 @@ function numFormat (num, digits) {
   return strOut
 }
 function calculateTimeDiff (msStart, msEnd) {
-  var intervalMins = 15
-
   //  Ensure end is always after start
   if (msEnd < msStart) {
     msEnd += msDay
   }
 
   //  Calculate difference between start and end times
-  var diff = Math.abs(msEnd - msStart)
+  const diff = Math.abs(msEnd - msStart)
 
   return diff
 }
 function formatToHoursAndMins (time) {
   // Split time into hours and minutes - func
-  var hours = toInt(time / msHour)
-  var mins = (time - (hours * msHour)) / msMin
+  const hours = toInt(time / msHour)
+  const mins = (time - (hours * msHour)) / msMin
 
   return hours + ':' + numFormat(mins, 2)
 }
 //  All values are in ms (below)
 function lockToInterval (num, interval) {
-  var cutoff = interval / 2
-  var time = num + cutoff
-  var numIntervals = toInt(time / interval)
+  const cutoff = interval / 2
+  const time = num + cutoff
+  const numIntervals = toInt(time / interval)
 
   return numIntervals * interval
 }
-function calculateHours () {
+function calculateHours () { // eslint-disable-line no-unused-vars
   //  Get values from html form - func
-  var startDate = document.getElementById('start').value
-  var endDate = document.getElementById('end').value
+  const startDate = document.getElementById('start').value
+  const endDate = document.getElementById('end').value
 
   //  Convert html dates to millisecond values
-  var msStart = new Date(new Date().toDateString() + ' ' + startDate).getTime()
-  var msEnd = new Date(new Date().toDateString() + ' ' + endDate).getTime()
+  const msStart = new Date(new Date().toDateString() + ' ' + startDate).getTime()
+  const msEnd = new Date(new Date().toDateString() + ' ' + endDate).getTime()
 
   //  Get difference in end and start time in milliseconds
-  var diff = calculateTimeDiff(msStart, msEnd)
+  let diff = calculateTimeDiff(msStart, msEnd)
 
   //  subtract lunch break
   diff -= msMin * 30
 
   //  Lock to intervals of 15 mins (returns millisecond value)
-  var time = lockToInterval(diff, msMin * 15)
+  const time = lockToInterval(diff, msMin * 15)
 
   //  Convert milliseconds to hours
-  var hours = time / msHour
+  const hours = time / msHour
 
   document.getElementById('time_output').innerHTML = hours
 }
