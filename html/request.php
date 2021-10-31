@@ -17,6 +17,7 @@
 			}
 
 			echo "Also got this far";
+			/*
 			$sql = "SELECT * FROM GIRLS";
 			$result = $conn->query($sql);
 
