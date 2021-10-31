@@ -11,13 +11,12 @@
 			$password="2yqtqnn4avyyvbnax7cke7onrj3q7kpf";
 			$dbname="ANT_TEST";
 
-			echo "Got this far";
-			/*
 			$conn= new mysqli($servername, $username, $password, $dbname);
 			if ($conn->connect_error) {
 				die("Database Connection failed: ", . $conn->connect_error);
 			}
 
+			echo "Also got this far";
 			$sql = "SELECT * FROM GIRLS";
 			$result = $conn->query($sql);
 
