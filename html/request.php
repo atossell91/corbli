@@ -12,10 +12,9 @@
 			$dbname="ANT_TEST";
 
 			$conn= new mysqli($servername, $username, $password, $dbname);
-			echo "Also got this far (connected)";
-			/*
+			
 			if ($conn->connect_error) {
-				die("Database Connection failed: ", . $conn->connect_error);
+				die("Database Connection failed: " . $conn->connect_error);
 			}
 
 			$sql = "SELECT * FROM GIRLS";
