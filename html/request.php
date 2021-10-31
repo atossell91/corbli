@@ -28,7 +28,7 @@
 					echo "No results.";
 				}
 			}	
-			$conn->close();*/
+			$conn->close();
 		?>
 	</body>
 </html>
