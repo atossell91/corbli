@@ -11,6 +11,8 @@
 			$password="2yqtqnn4avyyvbnax7cke7onrj3q7kpf";
 			$dbname="ANT_TEST";
 
+			echo "Got this far";
+			/*
 			$conn= new mysqli($servername, $username, $password, $dbname);
 			if ($conn->connect_error) {
 				die("Database Connection failed: ", . $conn->connect_error);
@@ -26,7 +28,7 @@
 			} else {
 				echo "No results.";
 			}
-			$conn->close();
+			$conn->close();*/
 		?>
 	</body>
 </html>
