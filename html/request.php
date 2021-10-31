@@ -9,7 +9,7 @@
 			$servername="localhost";
 			$username="ant";
 			$password="2yqtqnn4avyyvbnax7cke7onrj3q7kpf";
-			$dbname="ANT_TEST";
+			$dbname="ant_test";
 
 			$conn= new mysqli($servername, $username, $password, $dbname);
 			
@@ -17,7 +17,7 @@
 				die("Database Connection failed: " . $conn->connect_error);
 			}
 
-			$sql = "SELECT * FROM GIRLS";
+			$sql = "SELECT * FROM GIRLS WHERE BODYTYPE = \"BBW\";";
 			$result = $conn->query($sql);
 
 			if ($result->num_rows > 0) {
