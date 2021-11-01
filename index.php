@@ -14,7 +14,6 @@
 			<a href="index.php">Home</a>
 			<a href="html/about.html">About</a>
 			<a href="html/hours_calc.html">Calculate Hours</a>
-			<a href="html/request.php">SQL Test</a>
 			<a href="html/login.html">Login</a>
 			<a href="php/secret.php">Secret</a>
 		</div>
