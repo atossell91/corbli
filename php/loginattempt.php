@@ -14,6 +14,7 @@
 
     if ($res->num_rows < 1) {
         echo "Error - Couldn't find user.";
+        echo "<br>" . $query;
     }
     if ($res->num_rows > 1) {
         echo "Error - too many results.";
