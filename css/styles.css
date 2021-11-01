@@ -35,3 +35,15 @@ p1 {
 	stroke: green;
 	stroke-width: 2;
 }
+.collapser {
+	background: grey;
+	color: white;
+	padding-left: 10px;
+}
+details {
+	background: aqua;
+	border-bottom: 5px solid white;
+}
+.detail{
+	background: aquamarine;
+}
