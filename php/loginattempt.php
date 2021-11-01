@@ -26,5 +26,5 @@
     }
     session_start();
     $_SESSION['corbli_isLoggedIn']=true;
-    header('Location: ../php/secret.php');
+    header('Location: ../index.php');
 ?>
