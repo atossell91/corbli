@@ -22,7 +22,7 @@
 
     $row=$res->fetch_assoc();
     if ($row['username']!=$_POST['uname'] || $row['password']!=$_POST['pword']) {
-        header('Location: ../index.php')
+        header('Location: ../index.php');
     }
     session_start();
     $_SESSION['corbli_isLoggedIn']=true;
