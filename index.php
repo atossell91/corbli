@@ -17,11 +17,11 @@
 		</div>
 		<p1>Welcome to Corbli</p1>
 		<?php
-			if (isset($_SESSION['cobli_isLoggedIn']) && $_SESSION['corbli_isLoggedIn']==true) {
+			if (isset($_SESSION['corbli_isLoggedIn']) && $_SESSION['corbli_isLoggedIn']==true) {
 				echo "<p2>You are logged in!</p2>";
 			}
 			else {
-				echo "<p2>You are logged in!</p2>";
+				echo "<p2>You are not logged in!</p2>";
 			}
 		?>
 	</body>
