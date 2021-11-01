@@ -25,4 +25,6 @@
         echo "Invalid credentials. Please try again";
         exit("Exit message");
     }
+    session_start();
+    $_SESSION['corbli_isLoggedIn']='true';
 ?>

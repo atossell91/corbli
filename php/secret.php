@@ -1,4 +1,9 @@
 <!DOCTYPE html>
+<?php
+	if (!isset($_SESSION) || $_SESSION['corbli_isLoggedIn'] !='true') {
+		header('index.html');
+	}
+?>
 <html>
 	<head>
 		<link href="../css/styles.css" rel="stylesheet" type="text/css">
