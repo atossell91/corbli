@@ -21,5 +21,7 @@
     }
 
     $row=$res->fetch_assoc();
-    echo $row['username'] . ":" . $row['password'];
+    if ($row['username']==$_POST['uname'] && $row['password']==$_POST['pword']) {
+        echo "Success! - You are now strongly attracted to fat girls. Noone else is interesting to you.";
+    }
 ?>
