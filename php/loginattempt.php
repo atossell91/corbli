@@ -21,7 +21,8 @@
     }
 
     $row=$res->fetch_assoc();
-    if ($row['username']==$_POST['uname'] && $row['password']==$_POST['pword']) {
-        echo "Success! - You are now strongly attracted to fat girls. Noone else is interesting to you.";
+    if ($row['username']!=$_POST['uname'] || $row['password']!=$_POST['pword']) {
+        echo "Invalid credentials. Please try again";
+        exit("Exit message");
     }
 ?>
