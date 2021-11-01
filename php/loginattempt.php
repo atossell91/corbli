@@ -21,7 +21,5 @@
     }
 
     $row=$res->fetch_assoc();
-    if ($row['username']==$_POS['uname'] && $row['password'] ==$_POS['pword']) {
-        echo "Success!";
-    }
+    echo $row['username'] . ":" . $row['password'];
 ?>
