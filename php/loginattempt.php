@@ -1,4 +1,5 @@
 <?php
+    session_start();
     $host = "localhost";
     $user = "ant";
     $password = "2yqtqnn4avyyvbnax7cke7onrj3q7kpf";
@@ -21,10 +22,9 @@
     }
 
     $row=$res->fetch_assoc();
-    if ($row['username']!=$_POST['uname'] || $row['password']!=$_POST['pword']) {
+    if ($row['username']==$_POST['uname'] && $row['password']==$_POST['pword']) {
+        $_SESSION['corbli_isLoggedIn']=true;
         header('Location: ../index.php');
     }
-    session_start();
-    $_SESSION['corbli_isLoggedIn']=true;
     header('Location: ../index.php');
 ?>
