@@ -5,6 +5,6 @@
 		echo get_file_contents('Location: www.corbli.com/html/secret.html');
 	}
 	else {
-		header('Location: ../index.html');
+		header('Location: corbli.com/index.html');
 	}
 ?>
