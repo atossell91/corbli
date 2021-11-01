@@ -26,5 +26,5 @@
         exit("Exit message");
     }
     session_start();
-    $_SESSION['corbli_isLoggedIn']='true';
+    $_SESSION['corbli_isLoggedIn']=true;
 ?>
