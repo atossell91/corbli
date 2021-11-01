@@ -22,10 +22,9 @@
 
     $row=$res->fetch_assoc();
     if ($row['username']!=$_POST['uname'] || $row['password']!=$_POST['pword']) {
-        echo "Invalid credentials. Please try again";
-        exit("Exit message");
+        header('Location: ../index.php')
     }
     session_start();
     $_SESSION['corbli_isLoggedIn']=true;
-    header('www.corbli.com/php/secret.php');
+    header('Location: ../php/secret.php');
 ?>
