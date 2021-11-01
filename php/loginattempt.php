@@ -27,4 +27,5 @@
     }
     session_start();
     $_SESSION['corbli_isLoggedIn']=true;
+    header('../php/secret.php');
 ?>
