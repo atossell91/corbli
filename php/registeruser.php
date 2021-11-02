@@ -23,8 +23,8 @@
 
     $str_username = "\"" . $username . "\"";
     $str_password = "\"" . $password . "\"";
-    $query = "INSERT into CREDENTIALS VALUES(" . $str_username . ", " . $str_password . ");";
-    $res = $conn->query("INSERT into CREDENTIALS VALUES(" . $str_username . ", " . $str_password . ");");
+    $query = "INSERT INTO    CREDENTIALS VALUES(" . $str_username . ", " . $str_password . ");";
+    $res = $conn->query($query);
     echo "Query: " . $query . "<br>" . "Result: " . $res;
     echo "<br> Username: " . $username . " Password: " . $password;
 ?>
