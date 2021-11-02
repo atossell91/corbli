@@ -1,6 +1,7 @@
 <?php
 	session_start();
-	if (!(isset($_SESSION['corbli_isLoggedIn']) && $_SESSION['corbli_isLoggedIn'] ==true)) {
+	$disabled = true;
+	if (!(isset($_SESSION['corbli_isLoggedIn']) && $_SESSION['corbli_isLoggedIn'] ==true) || disabled) {
 		header('Location: ../index.php');
 		exit;
 	}
