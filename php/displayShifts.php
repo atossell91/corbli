@@ -2,7 +2,7 @@
     $host = 'localhost';
     $dbuser = 'ant';
     $dbpassword = '2yqtqnn4avyyvbnax7cke7onrj3q7kpf';
-    $dbname= 'corblim';
+    $dbname= 'corbli';
 
     session_start();
 
