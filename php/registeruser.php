@@ -1,5 +1,6 @@
 <?php
     function createRandomString($len) {
+        $len = 10;
         $chars = "01234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
         $str = "password123";
         for ($n = 0; n < $len; $n++) {
