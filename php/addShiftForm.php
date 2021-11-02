@@ -21,7 +21,7 @@
 			<a href="../html/about.html">About</a>
 			<a href="../html/hours_calc.html">Calculate Hours</a>
 			<a href="../html/login.html">Login</a>
-			<a href="../php/addShiftForm.html">Add Shift</a>
+			<a href="../php/addShiftForm.php">Add Shift</a>
 		</div>
 		<form action="tryAddShift.php" method="post">
 			<label for="shiftStart">Start Time:</label>
