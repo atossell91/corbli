@@ -1,6 +1,6 @@
 <?php
     $host = 'localhost';
-    $dbuser = 'antd';
+    $dbuser = 'ant';
     $dbpassword = '2yqtqnn4avyyvbnax7cke7onrj3q7kpf';
     $dbname= 'corbli';
 
