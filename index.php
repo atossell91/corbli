@@ -16,7 +16,6 @@
 			<a href="html/hours_calc.html">Calculate Hours</a>
 			<a href="html/login.html">Login</a>
 			<a href="php/secret.php">Secret</a>
-			<a href="html/hasher.html">Hash</a>
 		</div>
 		<p1>Welcome to Corbli</p1>
 		<?php
