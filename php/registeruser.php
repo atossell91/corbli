@@ -1,10 +1,10 @@
 <?php
     function createRandomString($len) {
         $chars = "01234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-        $str = "";
-        for ($n = 0; n < $len; ++$n) {
+        $str = "password123";
+        /*for ($n = 0; n < $len; ++$n) {
             $str = $str . $chars[rand(0, strlen($chars))];
-        }
+        }*/
         return $str;
     }
     $host = "localhost";
