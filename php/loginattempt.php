@@ -24,6 +24,7 @@
     $row=$res->fetch_assoc();
     if ($row['username']==$_POST['uname'] && password_verify($_POST['pword'],$row['password'])) {
         $_SESSION['corbli_isLoggedIn']=true;
+        $_SESSION['user']=$_POST['uname'];
         header('Location: ../index.php');
     }
     header('Location: ../index.php');
