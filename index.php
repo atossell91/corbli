@@ -16,6 +16,7 @@
 			<a href="html/hours_calc.html">Calculate Hours</a>
 			<a href="html/login.html">Login</a>
 			<a href="../php/addShiftForm.php">Add Shift</a>
+            <a href="/displayShifts.php">Display Shifts</a>
 		</div>
 		<p1>Welcome to Corbli</p1>
 		<?php

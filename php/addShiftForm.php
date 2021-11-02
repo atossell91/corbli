@@ -22,6 +22,7 @@
 			<a href="../html/hours_calc.html">Calculate Hours</a>
 			<a href="../html/login.html">Login</a>
 			<a href="../php/addShiftForm.php">Add Shift</a>
+            <a href="../php/displayShifts.php">Display Shifts</a>
 		</div>
 		<form action="tryAddShift.php" method="post">
 			<label for="shiftStart">Start Time:</label>
