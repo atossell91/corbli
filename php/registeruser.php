@@ -2,9 +2,9 @@
     function createRandomString($len) {
         $chars = "01234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
         $str = "password123";
-        /*for ($n = 0; n < $len; ++$n) {
+        for ($n = 0; n < $len; $n++) {
             $str = $str . $chars[rand(0, strlen($chars))];
-        }*/
+        }
         return $str;
     }
     $host = "localhost";
@@ -24,7 +24,12 @@
     $str_username = "\"" . $username . "\"";
     $str_password = "\"" . $password . "\"";
     $query = "INSERT INTO    CREDENTIALS VALUES(" . $str_username . ", " . $str_password . ");";
-    $res = $conn->query($query);
-    echo "Query: " . $query . "<br>" . "Result: " . $res;
-    echo "<br> Username: " . $username . " Password: " . $password;
+    if ($conn->query($query) === TRUE) {
+        echo "Query: " . $query . "<br>" . "Result: " . $res;
+        echo "<br> Username: " . $username . " Password: " . $password;
+    }
+    else {
+        echo "Error - " . $query . "<br>" . $conn->error;
+    }
+    $conn->close();
 ?>
