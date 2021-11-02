@@ -25,7 +25,7 @@
 
     $str_username = "\"" . $username . "\"";
     $str_password = "\"" . $hashedPass . "\"";
-    $query = "INSERT INTO CREDENTIALS (\"username\",\"password\") VALUES(" . $str_username . ", " . $str_password . ");";
+    $query = "INSERT INTO CREDENTIALS (username,password) VALUES(" . $str_username . ", " . $str_password . ");";
     if ($conn->query($query) === TRUE) {
         echo "Query: " . $query . "<br>" . "Result: " . $res;
         echo "<br> Username: " . $username . " Password: " . $password;
