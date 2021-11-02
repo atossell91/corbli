@@ -40,10 +40,11 @@
                     die('Connect Error - ' . $conn->connect_error);
                 }
                 
-                $query = 'SELECT * FROM SHIFTS WHERE username=' . quot($user) . ';';
+                //$query = 'SELECT * FROM SHIFTS WHERE username=' . quot($user) . ';';
+                $query = 'SELECT * FROM SHIFTS;';
                 $res = $conn->query($query);
 
-                if (/*$res === */true) {
+                if ($res === true) {
                     while ($rows = $res->fetch_assoc()) {
                         echo '<div class=\'timeRow\'><div class=\'timeCell\'' . $rows['startDate'] . '</div>';
                         echo '<div class=\'timeCell\'' . $rows['endDate'] . '</div></div><br>';
