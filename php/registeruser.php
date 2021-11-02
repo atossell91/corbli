@@ -21,9 +21,10 @@
 
     $username = $_POST['uname'];
     $password = createRandomString(8);
+    $hashedPass = password_hash($password, PASSWORD_BCRYPT);
 
     $str_username = "\"" . $username . "\"";
-    $str_password = "\"" . $password . "\"";
+    $str_password = "\"" . $hashedPass . "\"";
     $query = "INSERT INTO    CREDENTIALS VALUES(" . $str_username . ", " . $str_password . ");";
     if ($conn->query($query) === TRUE) {
         echo "Query: " . $query . "<br>" . "Result: " . $res;
