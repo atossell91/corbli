@@ -3,7 +3,7 @@
         $len = 10;
         $chars = "01234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
         $str = "password123";
-        for ($n = 0; n < $len; $n++) {
+        for ($n = 0; $n < $len; $n++) {
             //$str .= $chars[rand(0, strlen($chars))];
         }
         return $str;
