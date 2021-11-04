@@ -42,8 +42,8 @@
         }
         
         //$query = 'SELECT * FROM SHIFTS WHERE username=' . quot($user) . ';';
-        $query = "SELECT * FROM SHIFTS;";
-        $res = $conn->query('SELECT username FROM CREDENTIALS');
+        $query = "SELECT username FROM SHIFTS;";
+        $res = $conn->query($query);
 
         if ($res === true) {
             while ($rows = $res->fetch_assoc()) {
