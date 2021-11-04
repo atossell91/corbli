@@ -10,7 +10,7 @@
 		<div class="title">
 			Corbli
 		</div>
-		<div class="motto">
+		<div class="title">
 			<i>Fiat vacca</i>
 		</div>
 		<div class="links">
