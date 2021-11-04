@@ -42,7 +42,7 @@
         }
         
         //$query = 'SELECT * FROM SHIFTS WHERE username=' . quot($user) . ';';
-        $query = "SELECT username FROM CREDENTIALS;";
+        $query = 'SELECT username FROM MYTABLE;';
         $res = $conn->query($query);
 
         if ($res === true) {
@@ -52,8 +52,8 @@
             }
         }
         else {
-            echo 'Query error' . $res->error . '<br>';
-            echo 'Query was --- ' . $query;
+            echo 'Query error |' . $res->error . '| <br>';
+            echo 'Query was --- <' . $query . '>';
         }
 
         $conn->close();
