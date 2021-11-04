@@ -7,11 +7,10 @@ html {
 	font-weight: bold;
 	font-size: 36pt;
 	background-color: LightGrey;
-	padding-left: 10%;
+	padding-left: 5%;
 }
 .motto {
-	color: hotpink;
-	text-indent: 15%;
+	text-indent: 10%;
 }
 .links {
 	background-color: DarkGrey;
