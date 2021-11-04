@@ -10,7 +10,7 @@
         die("An error ocurred" . $conn->connect_error);
     }
 
-    $query="SELECT username, password FROM CREDENTIALS where username=\"" . $_POST['uname'] . "\";";
+    $query="SELECT username, password FROM CREDENTIALS where username=\"" . $_POST['username'] . "\";";
     $res=$conn->query($query);
 
     if ($res->num_rows < 1) {
