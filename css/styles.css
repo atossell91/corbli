@@ -7,7 +7,7 @@ html {
 	font-weight: bold;
 	font-size: 36pt;
 	background-color: LightGrey;
-	padding-left: 50px;
+	padding-left: 10%;
 }
 .links {
 	background-color: DarkGrey;
@@ -46,4 +46,8 @@ details {
 }
 .detail{
 	background: aquamarine;
+}
+.motto{
+	font-size: 18pt;
+	text-indent: 15%;
 }
