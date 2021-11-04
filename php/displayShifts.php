@@ -42,7 +42,7 @@
         }
         
         //$query = 'SELECT * FROM SHIFTS WHERE username=' . quot($user) . ';';
-        $query = "SELECT username FROM SHIFTS;";
+        $query = "SELECT username FROM CREDENTIALS;";
         $res = $conn->query($query);
 
         if ($res === true) {
