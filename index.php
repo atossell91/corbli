@@ -8,7 +8,7 @@
 	</head>
 	<body>
 		<div class="title">
-			Corbli CORB CORN CORNY
+			Corbli
 		</div>
 		<div class="motto">
 			<i>Fiat vacca</i>
