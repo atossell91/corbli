@@ -43,7 +43,7 @@
         
         //$query = 'SELECT * FROM SHIFTS WHERE username=' . quot($user) . ';';
         $query = "SELECT * FROM SHIFTS;";
-        $res = $conn->query('SELECT * FROM CREDENTIALS');
+        $res = $conn->query('SELECT username FROM CREDENTIALS');
 
         if ($res === true) {
             while ($rows = $res->fetch_assoc()) {
