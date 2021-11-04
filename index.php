@@ -8,7 +8,7 @@
 	</head>
 	<body>
 		<div class="title">
-			Corbli Industries
+			Corbli
 		</div>
 		<div class="motto">
 			<i>Fiat vacca</i>
