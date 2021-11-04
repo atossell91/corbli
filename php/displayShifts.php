@@ -50,8 +50,8 @@
             while ($rows = $res->fetch_assoc()) {
                 echo 'Start: ' . $rows['startDate'] . '<br>';
                 echo 'End: ' . $rows['endDate'] . '<br>';
-                echo '<div class=\'timeRow\'><div class=\'timeCell\'' . $rows['startDate'] . '</div></div>';
-                //echo '<div class=\'timeCell\'' . $rows['endDate'] . '</div></div><br>';
+                echo '<div class=\'timeRow\'><div class=\'timeCell\'' . $rows['startDate'] . '</div>';
+                echo '<div class=\'timeCell\'' . $rows['endDate'] . '</div></div><br>';
             }
         }
         else {
