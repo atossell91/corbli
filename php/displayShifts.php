@@ -39,13 +39,14 @@
         $conn = new mysqli($host, $dbuser, $dbpassword, $dbname);
         if ($conn->connect_error) {
             die('Connect Error - ' . $conn->connect_error);
+            exit;
         }
         
         //$query = 'SELECT * FROM SHIFTS WHERE username=' . quot($user) . ';';
         $query = 'SELECT username FROM MYTABLE;';
         $res = $conn->query($query);
 
-        if ($res === true) {
+        if ($res->num_rows > 0) {
             while ($rows = $res->fetch_assoc()) {
                 echo '<div class=\'timeRow\'><div class=\'timeCell\'' . $rows['startDate'] . '</div>';
                 echo '<div class=\'timeCell\'' . $rows['endDate'] . '</div></div><br>';
