@@ -34,29 +34,29 @@
             <a href="../php/displayShifts.php">Display Shifts</a>
 		</div>
         <div class="displayResults">
-            <?php
-                $conn = new mysqli($host, $dbuser, $dbpassword, $dbname);
-                if ($conn->connect_error) {
-                    die('Connect Error - ' . $conn->connect_error);
-                }
-                
-                //$query = 'SELECT * FROM SHIFTS WHERE username=' . quot($user) . ';';
-                $query = "SELECT * FROM SHIFTS;";
-                $res = $conn->query($query);
+    <?php
+        $conn = new mysqli($host, $dbuser, $dbpassword, $dbname);
+        if ($conn->connect_error) {
+            die('Connect Error - ' . $conn->connect_error);
+        }
+        
+        //$query = 'SELECT * FROM SHIFTS WHERE username=' . quot($user) . ';';
+        $query = "SELECT * FROM SHIFTS;";
+        $res = $conn->query($query);
 
-                if ($res === true) {
-                    while ($rows = $res->fetch_assoc()) {
-                        echo '<div class=\'timeRow\'><div class=\'timeCell\'' . $rows['startDate'] . '</div>';
-                        echo '<div class=\'timeCell\'' . $rows['endDate'] . '</div></div><br>';
-                    }
-                }
-                else {
-                    echo 'Query error' . $res->error . '<br>';
-                    echo 'Query was --- ' . $query;
-                }
+        if ($res === true) {
+            while ($rows = $res->fetch_assoc()) {
+                echo '<div class=\'timeRow\'><div class=\'timeCell\'' . $rows['startDate'] . '</div>';
+                echo '<div class=\'timeCell\'' . $rows['endDate'] . '</div></div><br>';
+            }
+        }
+        else {
+            echo 'Query error' . $res->error . '<br>';
+            echo 'Query was --- ' . $query;
+        }
 
-                $conn->close();
-            ?>
+        $conn->close();
+    ?>
         </div>
 	</body>
 </html>
