@@ -43,7 +43,7 @@
         }
         
         //$query = 'SELECT * FROM SHIFTS WHERE username=' . quot($user) . ';';
-        $query = 'SELECT username FROM MYTABLE;';
+        $query = 'SELECT username FROM CREDENTIALS;';
         $res = $conn->query($query);
 
         if ($res->num_rows > 0) {
