@@ -1,8 +1,4 @@
 <?php
-    $host = 'localhost';
-    $dbuser = 'ant';
-    $dbpassword = '2yqtqnn4avyyvbnax7cke7onrj3q7kpf';
-    $dbname= 'corbli';
 
     session_start();
 
@@ -35,6 +31,11 @@
 		</div>
         <div class="displayResults">
     <?php
+        $host = 'localhost';
+        $dbuser = 'ant';
+        $dbpassword = '2yqtqnn4avyyvbnax7cke7onrj3q7kpf';
+        $dbname= 'corbli';
+
         $conn = new mysqli($host, $dbuser, $dbpassword, $dbname);
         if ($conn->connect_error) {
             die('Connect Error - ' . $conn->connect_error);
