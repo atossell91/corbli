@@ -22,7 +22,7 @@
 			Corbli
 		</div>
 		<div class="links">
-			<a href="index.php">Home</a>
+			<a href="../index.php">Home</a>
 			<a href="../html/about.html">About</a>
 			<a href="../html/hours_calc.html">Calculate Hours</a>
 			<a href="../html/login.html">Login</a>
