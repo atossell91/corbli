@@ -48,8 +48,9 @@
         if ($res->num_rows > 0) {
             echo 'Success! Query was -> ' . $query . '<br>';
             while ($rows = $res->fetch_assoc()) {
-                echo $rows['startDate'];
-                //echo '<div class=\'timeRow\'><div class=\'timeCell\'' . $rows['startDate'] . '</div>';
+                echo 'Start: ' . $rows['startDate'] . '<br>';
+                echo 'End: ' . $rows['endDate'] . '<br>';
+                echo '<div class=\'timeRow\'><div class=\'timeCell\'' . $rows['startDate'] . '</div></div>';
                 //echo '<div class=\'timeCell\'' . $rows['endDate'] . '</div></div><br>';
             }
         }
