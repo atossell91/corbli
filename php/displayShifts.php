@@ -53,7 +53,7 @@
         }
         else {
             echo 'Query error |' . $res->error . '| <br>';
-            echo 'Query was --- <' . $query . '>';
+            echo 'Query was --- |' . $query . '|';
         }
 
         $conn->close();
