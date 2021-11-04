@@ -4,8 +4,9 @@
 
 //if ( $_POST['payload'] ) {
 $output = shell_exec('cd /var/www/corbli && git reset –hard HEAD && git pull');
-echo 'Whiskey';
-echo $output;
+$output = shell_exec('ls /var/www/corbli');
+echo 'Whiskey' . '<br>';
+echo '|' . $output . '| <br>';
 //}
 
 ?>hi
