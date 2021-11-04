@@ -9,6 +9,10 @@ html {
 	background-color: LightGrey;
 	padding-left: 10%;
 }
+.motto {
+	color: hotpink;
+	text-indent: 15%;
+}
 .links {
 	background-color: DarkGrey;
 	font-family: Arial;
@@ -46,8 +50,4 @@ details {
 }
 .detail{
 	background: aquamarine;
-}
-motto {
-	color: hotpink;
-	text-indent: 15%;
 }
