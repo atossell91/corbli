@@ -42,11 +42,11 @@
             exit;
         }
         
-        //$query = 'SELECT * FROM SHIFTS WHERE username=' . quot($user) . ';';
-        $query = 'SELECT username FROM CREDENTIALS;';
+        $query = 'SELECT * FROM SHIFTS WHERE username=' . quot($user) . ';';
         $res = $conn->query($query);
 
         if ($res->num_rows > 0) {
+            echo 'Success! Query was -> ' . $query;
             while ($rows = $res->fetch_assoc()) {
                 echo '<div class=\'timeRow\'><div class=\'timeCell\'' . $rows['startDate'] . '</div>';
                 echo '<div class=\'timeCell\'' . $rows['endDate'] . '</div></div><br>';
