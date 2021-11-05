@@ -51,9 +51,9 @@ details {
 	background: aquamarine;
 }
 .timeCell {
-	border-style: double;
-	border-width: 1pt;
+	border-style: solid;
+	border-width: 0.75pt;
 }
 .headerCell {
-	border-style:  solid;
+	border-style:  double;
 }
