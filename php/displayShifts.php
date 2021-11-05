@@ -46,8 +46,8 @@
         $res = $conn->query($query);
 
         if ($res->num_rows > 0) {
-            echo '<div class=\'timeRow\'><span class=\'timeCell\'>' . '\'Start\'' . '</span>';
-            echo '<span class=\'timeCell\'>' . '\'End\'' . '</span></div><br>';
+            echo '<div class=\'timeRow\'><span class=\'timeCell\'>' . 'Start' . '</span>';
+            echo '<span class=\'timeCell\'>' . 'End' . '</span></div><br>';
             while ($rows = $res->fetch_assoc()) {
                 echo '<div class=\'timeRow\'><span class=\'timeCell\'>' . $rows['startDate'] . '</span>';
                 echo '<span class=\'timeCell\'>' . $rows['endDate'] . '</span></div><br>';
