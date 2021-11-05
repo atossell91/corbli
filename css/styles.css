@@ -56,4 +56,5 @@ details {
 .timeCell{
 	border-style: double;
 	color: black;
+	text-align: center;
 }
