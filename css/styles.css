@@ -2,7 +2,7 @@ html {
 	font-size: 18pt;
 }
 .title {
-	color: green;
+	color: red;
 	font-family: 'courier new';
 	font-weight: bold;
 	font-size: 36pt;
@@ -52,5 +52,6 @@ details {
 }
 .timeCell{
 	border-style: double;
-	color: hotpink;
+	border-width: 20%;
+	color: black;
 }
