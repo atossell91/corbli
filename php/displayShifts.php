@@ -46,7 +46,7 @@
         $res = $conn->query($query);
 
         if ($res->num_rows > 0) {
-            echo '<table class=\'shiftTable\'><tr><th>Start</th><th>End</th></tr>';
+            echo '<table class=\'shiftTable\'><tr class=\'headerRow\'><th class=\'headerCell\'>Start</th><th>End</th></tr>';
             while ($rows = $res->fetch_assoc()) {
                 echo '<tr class=\'timeRow\'><th class=\'timeCell\'>' . $rows['startDate'] . '</th>';
                 echo '<th class=\'timeCell\'>' . $rows['endDate'] . '</th></tr><br>';
