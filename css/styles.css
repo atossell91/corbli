@@ -52,6 +52,7 @@ details {
 }
 .timeRow {
 	width: 45%;
+	border-style: solid;
 }
 .timeCell{
 	border-style: double;
