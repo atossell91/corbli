@@ -47,8 +47,8 @@
 
         if ($res->num_rows > 0) {
             while ($rows = $res->fetch_assoc()) {
-                echo '<div class=\'timeRow\'><div class=\'timeCell\'>' . $rows['startDate'] . '</div>';
-                echo '<div class=\'timeCell\'>' . $rows['endDate'] . '</div></div><br>';
+                echo '<div class=\'timeRow\'><span class=\'timeCell\'>' . $rows['startDate'] . '</div>';
+                echo '<div class=\'timeCell\'>' . $rows['endDate'] . '</span></div><br>';
             }
         }
         else {
