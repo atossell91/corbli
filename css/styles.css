@@ -50,3 +50,6 @@ details {
 .detail{
 	background: aquamarine;
 }
+.timeCell{
+	border-style: double;
+}
