@@ -17,11 +17,13 @@
             <a href="../php/displayShifts.php">Display Shifts</a>
 		</div>
         <form name="login" action="../php/loginattempt.php" method="post">
-			<label for="username" class="label hidden"><span class="accesskey">U</span>sername</label>
-				<input id="username" name="username" class="required textfield" tabindex="1" placeholder="Username" autocapitalize="off" accesskey="u" type="text" value="" size="25" autocomplete="false"/><br>
-			<label for="password" class="label hidden"><span class="accesskey">P</span>assword</label>
-			<input id="password" name="password" class="required textfield" tabindex="2" placeholder="Password" accesskey="p" type="password" value="" autocomplete="off"/><br>
-			<input id="submit" type="submit" class="submitbutton" value="Sign In">
+            <label for="username">Username:</label>
+            <input type="text" name="username" id="username" required value="" autocomplete="username">
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" required value="" autocomplete="current-password">
+            <br>
+            <button action="submit">Submit</button>
         </form>
 		<div class ="Text">
 			<a href="../html/register.html" target="_self">Click here to register</a>
