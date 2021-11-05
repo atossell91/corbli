@@ -50,8 +50,10 @@ details {
 .detail{
 	background: aquamarine;
 }
+.timeRow {
+	width: 10%;
+}
 .timeCell{
 	border-style: double;
-	border-width: 20%;
 	color: black;
 }
