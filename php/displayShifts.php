@@ -46,12 +46,12 @@
         $res = $conn->query($query);
 
         if ($res->num_rows > 0) {
-            echo '<div class=\'timeRow\'><span class=\'timeCell\'>' . 'Start' . '</span>';
-            echo '<span class=\'timeCell\'>' . 'End' . '</span></div><br>';
+            echo '<table><tr><th>Start</th><th>End</th></tr>';
             while ($rows = $res->fetch_assoc()) {
-                echo '<div class=\'timeRow\'><span class=\'timeCell\'>' . $rows['startDate'] . '</span>';
-                echo '<span class=\'timeCell\'>' . $rows['endDate'] . '</span></div><br>';
+                echo '<tr class=\'timeRow\'><th class=\'timeCell\'>' . $rows['startDate'] . '</th>';
+                echo '<th class=\'timeCell\'>' . $rows['endDate'] . '</th></tr><br>';
             }
+            echo '</table>';
         }
         else {
             echo 'Query error |' . $res->error . '| <br>';

@@ -50,13 +50,3 @@ details {
 .detail{
 	background: aquamarine;
 }
-.timeRow {
-	width: 45%;
-	border-style: solid;
-}
-.timeCell{
-	border-style: double;
-	color: black;
-	text-align: center;
-	width: 500%;
-}
