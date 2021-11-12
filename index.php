@@ -20,6 +20,7 @@
 			<a href="html/login.html">Login</a>
 			<a href="/php/addShiftForm.php">Add Shift</a>
             <a href="/php/displayShifts.php">Display Shifts</a>
+            <a href="/php/draw.php">Draw</a>
 		</div>
 		<p1>Welcome to Corbli</p1>
 		<?php
